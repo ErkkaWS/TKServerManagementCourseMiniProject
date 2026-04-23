@@ -1,2 +1,2 @@
 # TKServerManagementCourseMiniProject
-We made this web-page thingy on Linux using Ansible
+We made this Webpage server thingy on Linux using Ansible

@@ -2,3 +2,9 @@
   systemd: 
     name: nginx
     state: restarted
+
+- name: Kopioi nginx-konfiguraatio
+  copy:
+    src: uncleco.com.conf
+    dest: /etc/nginx/sites-available/uncleco.com.conf
+  notify: restart nginx

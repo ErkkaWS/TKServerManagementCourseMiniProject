@@ -8,3 +8,8 @@
     -palomuuri
     -sivusto
     -php
+
+- name: nginx
+  apt:
+    name: nginx
+    state: present

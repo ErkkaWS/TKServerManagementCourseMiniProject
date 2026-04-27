@@ -1,1 +1,3 @@
-#HOLDER
+- service:
+  name: nginx
+  state: restarted

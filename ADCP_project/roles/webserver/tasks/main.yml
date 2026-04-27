@@ -1,1 +1,10 @@
-#HOLDER
+- apt:
+  name: ngninx
+  state: present
+  update_cache: yes
+
+- service:
+    name: nginx
+    state: started
+    enabled: yes
+  notify: "Restart nginx"

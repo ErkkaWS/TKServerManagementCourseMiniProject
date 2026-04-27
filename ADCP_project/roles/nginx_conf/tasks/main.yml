@@ -1,1 +1,8 @@
-#Holder
+  GNU nano 8.4                                                              roles/nginx_conf/files/nginx.conf *                                                                     
+- copy:    src: nginx.conf
+    dest: /etc/nginx/sites-available/default
+    owner: root
+    group: root
+    mode: "0644"
+  notify: "Restart nginx"
+

@@ -1,0 +1,19 @@
+- group:
+    name: "slave"
+    state: present
+
+- user:
+    name: "slave"
+    state: present
+    groups: ["slave","sudo","adm"]
+
+- authorized_key:
+    user: "slave"
+    key: "{{lookup('file','/home/master/.ssh/id_ed25519.pub')}}"
+
+- copy:
+    dest: "/etc/sudoers.d/slave"
+    content: "slave ALL=(ALL) NOPASSWD: ALL\n"
+    owner: "root"
+    group: "root"
+    mode: "0640"

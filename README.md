@@ -4,17 +4,16 @@ We made this Ansible based automated nginx webpage- server/portal thingy on Debi
 **Setup**
 
 Clone: git clone git@github.com:ErkkaWS/Ansible-Duo-CV-Portal.git
-Configure network adapters per VM (see Network Setup) or regular Network configuration
-Copy SSH key to each worker: ssh-copy-id slave@<worker-ip>
-Update hosts.ini with worker IPs
-Run: ansible-playbook site.yml
+<br>Configure network adapters per VM (see Network Setup) or regular Network configuration
+<br>Copy SSH key to each worker: ssh-copy-id slave@<worker-ip>
+<br>Update hosts.ini with worker IPs
+<br>Run: ansible-playbook site.yml
 
 
 
 **VM Network Setup**
-
-<br>Each VM requires two network adapters in VirtualBox:
-
+<br>
+Each VM requires two network adapters in VirtualBox:
 Adapter 1: NAT
 Adapter 2: Internal Network (intnet)
 

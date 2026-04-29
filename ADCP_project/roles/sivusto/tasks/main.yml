@@ -54,7 +54,6 @@
     group: www-data
     mode: '0644'
 
-
 - name: copy 404 html
   copy:
     src: 404/404.html

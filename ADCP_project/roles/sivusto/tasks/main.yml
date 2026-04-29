@@ -30,51 +30,27 @@
     group: www-data
     mode: '0775'
 
-
-- name: copy erkka_photo
+- name: copy erkka
   copy:
-    src: erkka/erkka.jpg
-    dest: /var/www/html/erkka/erkka.jpg
+    src: erkka
+    dest: /var/www/html/erkka
     owner: www-data
     group: www-data
     mode: '0644'
 
-- name: copy vili_photo
+- name: copy vili
   copy:
-    src: vili/vili.png
-    dest: /var/www/html/vili/vili.png
+    src: vili
+    dest: /var/www/html/vili
     owner: www-data
     group: www-data
     mode: '0644'
 
-- name: copy erkka html
-  copy:
-    src: erkka/index.html
-    dest: /var/www/html/erkka/index.html
-    owner: www-data
-    group: www-data
-    mode: '0644'
 
-- name: copy vili html
+- name: copy 404
   copy:
-    src: vili/index.html
-    dest: /var/www/html/vili/index.html
-    owner: www-data
-    group: www-data
-    mode: '0644'
-
-- name: copy 404 gif
-  copy:
-    src: 404/giphy.gif
-    dest: /var/www/html/giphy.gif
-    owner: www-data
-    group: www-data
-    mode: '0644'
-
-- name: copy 404 html
-  copy:
-    src: 404/404.html
-    dest: /var/www/html/404.html
+    src: 404
+    dest: /var/www/html
     owner: www-data
     group: www-data
     mode: '0644'

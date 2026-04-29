@@ -50,7 +50,7 @@
 - name: copy erkka html
   file:
     src: erkka/index.html
-    path: /var/www/html/index.html
+    path: /var/www/html/erkka/index.html
     owner: www-data
     group: www-data
     mode: '0644'
@@ -58,7 +58,7 @@
 - name: copy vili html
   file:
     src: vili/index.html
-    path: /var/www/html/index.html
+    path: /var/www/html/vili/index.html
     owner: www-data
     group: www-data
     mode: '0644'

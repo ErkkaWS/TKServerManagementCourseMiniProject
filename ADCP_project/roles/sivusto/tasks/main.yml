@@ -47,6 +47,22 @@
     group: www-data
     mode: '0644'
 
+- name: copy erkka html
+  file:
+    src: erkka/index.html
+    path: /var/www/html/index.html
+    owner: www-data
+    group: www-data
+    mode: '0644'
+
+- name: copy vili html
+  file:
+    src: vili/index.html
+    path: /var/www/html/index.html
+    owner: www-data
+    group: www-data
+    mode: '0644'
+
 - name: copy 404 gif
   copy:
     src: 404/giphy.gif

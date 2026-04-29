@@ -1,0 +1,22 @@
+- name: install php php-fpm & php-curl
+  apt:
+    name:
+      - php
+      - php-fpm
+      - php-curl
+    state: present
+    update_cache: yes
+
+- name: start php-fpm
+  service:
+    name: php-fpm
+    state: started
+    enabled: yes
+
+- name: copy yhteydenottolomake
+  copy:
+    src: yhteydenotto.php
+    dest: /var/www/html/yhteydenotto.php
+    owner: www-data
+    group: www-data
+    mode: '0644'

@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $viesti = htmlspecialchars($_POST["viesti"]);
     
     $data = json_encode([
-        "content" => "**Yhteydenotto:**\nNimi: $nimi\nViesti: $viesti"
+        "content" => "**BINGO BANGO BONGO POIJJAAT! JOKU KÄVI TIIRAILEES TEITÄ**\nSE OLI: $nimi\n JA SE SANO: $viesti"
     ]);
     
     $ch = curl_init($webhook_url);

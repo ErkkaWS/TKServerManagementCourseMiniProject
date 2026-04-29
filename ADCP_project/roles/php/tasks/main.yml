@@ -13,6 +13,13 @@
     state: started
     enabled: yes
 
+- name: Aseta Discord webhook PHP-FPM:lle
+  lineinfile:
+    path: "/etc/php/8.4/fpm/pool.d/www.conf"
+    line: "env[DISCORD_WEBHOOK_URL] = '{{ discord_url }}'"
+    insertafter: EOF
+  notify: restart php8.4-fpm
+
 - name: copy yhteydenottolomake
   copy:
     src: yhteydenotto.php

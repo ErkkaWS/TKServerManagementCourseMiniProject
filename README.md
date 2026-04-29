@@ -1,6 +1,10 @@
 # **Ansible Duo Curriculum Vitae Portal**
 We made this Ansible based automated nginx webpage- server/portal thingy on Debian 13.4 Trixie, it configures and installs our combined CV-portal over multiple worker nodes. 
 
+## **Authors**
+Eric Setälä
+Vili Virtanen
+
 <table>
   <tr>
     <td><img width="900" src="https://github.com/user-attachments/assets/9b2cf035-066a-4e27-9dd1-ac40404140ac" /></td>
@@ -15,12 +19,6 @@ We made this Ansible based automated nginx webpage- server/portal thingy on Debi
     <td><img width="600" src="https://github.com/user-attachments/assets/d92f15ad-c2bf-4a54-871a-785e4510262d" /></td>
   </tr>
 </table>
-
-
-
-## **Authors**
-Eric Setälä
-Vili Virtanen
 
 ## **Licence**
 GNU General Public License v3.0

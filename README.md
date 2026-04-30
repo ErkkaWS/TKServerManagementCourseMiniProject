@@ -36,8 +36,9 @@ Clone: git clone git@github.com:ErkkaWS/Ansible-Duo-CV-Portal.git
 3. Click **New Webhook** → copy the webhook URL
 4. Open `roles/php/files/yhteydenotto.php`
 5. Replace `DISCORD_WEBHOOK` with your own webhook URL
-6. Replace /roles/php/files/yhteydenotto.php content with preferable content
-7. Run: `ansible-playbook site.yml`
+6. DONT BE A DUM DUM; dont post your webhook online...hide with separete yml-variablefile and add it to .gitignore
+7. Replace /roles/php/files/yhteydenotto.php content with preferable content
+8. Run: `ansible-playbook site.yml`
 
 ## **VM Network Setup**
 <br>
